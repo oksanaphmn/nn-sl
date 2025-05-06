@@ -1,6 +1,6 @@
 # VSI NPU Android Support Library
 
-## 1 How to build
+## 1. How to build
 
 with prebuild sdk is not recommend, just for build test.
 
@@ -26,7 +26,7 @@ Addition cmake definition added for this purpose -DEXT_TIM_VX=<git remote locati
 
 Addition cmake definition added for this purpose -DTIM_VX_TAG=commit-sha-id, just provide the commit id in TIM-VX github repo.
 
-## 2 Integrate with Android
+## 2. Integrate with Android
 
 verified with i.MX 8M Plus and Android 14
 
@@ -101,7 +101,7 @@ namespace.default.search.paths += /apex/com.android.os.statsd/${LIB}
 
 ### 2.5 Start service by run android.hardware.neuralnetworks-shell-service-sample on Android board
 
-### 2.6. run test with VTS
+### 2.6 run test with VTS
 
 ```sh
 ./VtsHalNeuralnetworksTargetTest --gtest_filter=TestGenerated/GeneratedTest.Test/android_hardware_neuralnetworks_IDevice_nnapi_sample_sl_updatable_reshape
@@ -113,7 +113,7 @@ namespace.default.search.paths += /apex/com.android.os.statsd/${LIB}
 ./CtsNNAPITestCases64 --gtest_filter=TestGenerated/QuantizationCouplingTest*
 ```
 
-## 3 Integrate with TfLite
+## 3. Integrate with TfLite
 
 ### 3.1 Get the source code of TensorFlow
 
